@@ -38,18 +38,18 @@ See [Voice Call](/plugins/voice-call) for a concrete example plugin.
 ## Available plugins (official)
 
 - Microsoft Teams is plugin-only as of 2026.1.15; install `@openclaw/msteams` if you use Teams.
-- Memory (Core) — bundled memory search plugin (enabled by default via `plugins.slots.memory`)
-- Memory (LanceDB) — bundled long-term memory plugin (auto-recall/capture; set `plugins.slots.memory = "memory-lancedb"`)
-- [Voice Call](/plugins/voice-call) — `@openclaw/voice-call`
-- [Zalo Personal](/plugins/zalouser) — `@openclaw/zalouser`
-- [Matrix](/channels/matrix) — `@openclaw/matrix`
-- [Nostr](/channels/nostr) — `@openclaw/nostr`
-- [Zalo](/channels/zalo) — `@openclaw/zalo`
-- [Microsoft Teams](/channels/msteams) — `@openclaw/msteams`
-- Google Antigravity OAuth (provider auth) — bundled as `google-antigravity-auth` (disabled by default)
-- Gemini CLI OAuth (provider auth) — bundled as `google-gemini-cli-auth` (disabled by default)
-- Qwen OAuth (provider auth) — bundled as `qwen-portal-auth` (disabled by default)
-- Copilot Proxy (provider auth) — local VS Code Copilot Proxy bridge; distinct from built-in `github-copilot` device login (bundled, disabled by default)
+- Memory (Core): bundled memory search plugin (enabled by default via `plugins.slots.memory`)
+- Memory (LanceDB): bundled long-term memory plugin (auto-recall/capture; set `plugins.slots.memory = "memory-lancedb"`)
+- [Voice Call](/plugins/voice-call): `@openclaw/voice-call`
+- [Zalo Personal](/plugins/zalouser): `@openclaw/zalouser`
+- [Matrix](/channels/matrix): `@openclaw/matrix`
+- [Nostr](/channels/nostr): `@openclaw/nostr`
+- [Zalo](/channels/zalo): `@openclaw/zalo`
+- [Microsoft Teams](/channels/msteams): `@openclaw/msteams`
+- Google Antigravity OAuth (provider auth): bundled as `google-antigravity-auth` (disabled by default)
+- Gemini CLI OAuth (provider auth): bundled as `google-gemini-cli-auth` (disabled by default)
+- Qwen OAuth (provider auth): bundled as `qwen-portal-auth` (disabled by default)
+- Copilot Proxy (provider auth): local VS Code Copilot Proxy bridge; distinct from built-in `github-copilot` device login (bundled, disabled by default)
 
 OpenClaw plugins are **TypeScript modules** loaded at runtime via jiti. **Config
 validation does not execute plugin code**; it uses the plugin manifest and JSON

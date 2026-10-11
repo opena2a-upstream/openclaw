@@ -82,7 +82,7 @@ Only the Gateway advertises `_openclaw-gw._tcp`.
 
 ## Service types
 
-- `_openclaw-gw._tcp` — gateway transport beacon (used by macOS/iOS/Android nodes).
+- `_openclaw-gw._tcp`: gateway transport beacon (used by macOS/iOS/Android nodes).
 
 ## TXT keys (non‑secret hints)
 

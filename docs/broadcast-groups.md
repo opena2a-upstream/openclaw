@@ -14,7 +14,7 @@ title: "Broadcast Groups"
 
 ## Overview
 
-Broadcast Groups enable multiple agents to process and respond to the same message simultaneously. This allows you to create specialized agent teams that work together in a single WhatsApp group or DM — all using one phone number.
+Broadcast Groups enable multiple agents to process and respond to the same message simultaneously. This allows you to create specialized agent teams that work together in a single WhatsApp group or DM, all using one phone number.
 
 Current scope: **WhatsApp only** (web channel).
 

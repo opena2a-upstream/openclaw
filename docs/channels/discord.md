@@ -423,8 +423,8 @@ Allowlist notes (PK-enabled):
 
 To request a threaded reply, the model can include one tag in its output:
 
-- `[[reply_to_current]]` — reply to the triggering Discord message.
-- `[[reply_to:<id>]]` — reply to a specific message id from context/history.
+- `[[reply_to_current]]`: reply to the triggering Discord message.
+- `[[reply_to:<id>]]`: reply to a specific message id from context/history.
   Current message ids are appended to prompts as `[message_id: …]`; history entries already include ids.
 
 Behavior is controlled by `channels.discord.replyToMode`:

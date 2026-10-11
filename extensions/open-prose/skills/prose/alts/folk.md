@@ -19,9 +19,9 @@ An alternative register for OpenProse that leans into literary, theatrical, and 
 1. Load `prose.md` first (execution semantics)
 2. Load this file (keyword translations)
 3. When parsing `.prose` files, accept folk keywords as aliases for functional keywords
-4. All execution behavior remains identical—only surface syntax changes
+4. All execution behavior remains identical. Only surface syntax changes
 
-> **Design constraint:** Still aims to be "structured but self-evident" per the language tenets—just self-evident to a different sensibility.
+> **Design constraint:** Still aims to be "structured but self-evident" per the language tenets, just self-evident to a different sensibility.
 
 ---
 
@@ -53,9 +53,9 @@ An alternative register for OpenProse that leans into literary, theatrical, and 
 | ---------- | ------------------ | ------------ | ----------------------------------- |
 | `repeat N` | `N times`          | Fairy tale   | "Three times she called..."         |
 | `for...in` | `for each...among` | Narrative    | Slightly more storytelling          |
-| `loop`     | `loop`             | —            | Already poetic, unchanged           |
-| `until`    | `until`            | —            | Already works, unchanged            |
-| `while`    | `while`            | —            | Already works, unchanged            |
+| `loop`     | `loop`             | none         | Already poetic, unchanged           |
+| `until`    | `until`            | none         | Already works, unchanged            |
+| `while`    | `while`            | none         | Already works, unchanged            |
 | `choice`   | `crossroads`       | Folklore     | Fateful decisions at the crossroads |
 | `option`   | `path`             | Journey      | Which path to take                  |
 | `if`       | `when`             | Narrative    | "When the moon rises..."            |
@@ -83,12 +83,12 @@ An alternative register for OpenProse that leans into literary, theatrical, and 
 
 These keywords already have poetic quality or are too functional to replace sensibly:
 
-- `**...**` discretion markers — already "breaking the fourth wall"
-- `loop`, `until`, `while` — already work narratively
-- `map`, `filter`, `reduce`, `pmap` — pipeline operators, functional is fine
-- `max` — constraint modifier
-- `as` — aliasing
-- Model names: `sonnet`, `opus`, `haiku` — already poetic
+- `**...**` discretion markers: already "breaking the fourth wall"
+- `loop`, `until`, `while`: already work narratively
+- `map`, `filter`, `reduce`, `pmap`: pipeline operators, functional is fine
+- `max`: constraint modifier
+- `as`: aliasing
+- Model names (`sonnet`, `opus`, `haiku`): already poetic
 
 ---
 
@@ -254,7 +254,7 @@ perform review("quantum computing")
 
 ## The Case For Folk
 
-1. **"OpenProse" is literary.** Prose is a literary form—why not lean in?
+1. **"OpenProse" is literary.** Prose is a literary form, so why not lean in?
 2. **Fourth wall is theatrical.** `**...**` already uses theatre terminology.
 3. **Signals difference.** Literary terms say "this is not your typical DSL."
 4. **Internally consistent.** Everything draws from folklore/theatre/narrative.
@@ -314,9 +314,9 @@ perform review("quantum computing")
 
 Preserved for benchmarking against the functional register. The functional register remains the primary path, but folk provides an interesting data point for:
 
-1. **Learnability** — Which is easier for newcomers?
-2. **Memorability** — Which sticks better?
-3. **Error rates** — Which leads to fewer mistakes?
-4. **Preference** — Which do users actually prefer?
+1. **Learnability**: Which is easier for newcomers?
+2. **Memorability**: Which sticks better?
+3. **Error rates**: Which leads to fewer mistakes?
+4. **Preference**: Which do users actually prefer?
 
 A future experiment could present both registers and measure outcomes.

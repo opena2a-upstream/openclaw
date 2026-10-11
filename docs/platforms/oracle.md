@@ -32,7 +32,7 @@ Oracle’s free tier can be a great fit for OpenClaw (especially if you already 
 
 ## Prerequisites
 
-- Oracle Cloud account ([signup](https://www.oracle.com/cloud/free/)) — see [community signup guide](https://gist.github.com/rssnyder/51e3cfedd730e7dd5f4a816143b25dbd) if you hit issues
+- Oracle Cloud account ([signup](https://www.oracle.com/cloud/free/)). See [community signup guide](https://gist.github.com/rssnyder/51e3cfedd730e7dd5f4a816143b25dbd) if you hit issues
 - Tailscale account (free at [tailscale.com](https://tailscale.com))
 - ~30 minutes
 
@@ -86,7 +86,7 @@ curl -fsSL https://tailscale.com/install.sh | sh
 sudo tailscale up --ssh --hostname=openclaw
 ```
 
-This enables Tailscale SSH, so you can connect via `ssh openclaw` from any device on your tailnet — no public IP needed.
+This enables Tailscale SSH, so you can connect via `ssh openclaw` from any device on your tailnet. No public IP is needed.
 
 Verify:
 
@@ -144,7 +144,7 @@ curl http://localhost:18789
 
 ## 8) Lock Down VCN Security
 
-Now that everything is working, lock down the VCN to block all traffic except Tailscale. OCI's Virtual Cloud Network acts as a firewall at the network edge — traffic is blocked before it reaches your instance.
+Now that everything is working, lock down the VCN to block all traffic except Tailscale. OCI's Virtual Cloud Network acts as a firewall at the network edge: traffic is blocked before it reaches your instance.
 
 1. Go to **Networking → Virtual Cloud Networks** in the OCI Console
 2. Click your VCN → **Security Lists** → Default Security List
@@ -178,7 +178,7 @@ No SSH tunnel needed. Tailscale provides:
 
 With the VCN locked down (only UDP 41641 open) and the Gateway bound to loopback, you get strong defense-in-depth: public traffic is blocked at the network edge, and admin access happens over your tailnet.
 
-This setup often removes the _need_ for extra host-based firewall rules purely to stop Internet-wide SSH brute force — but you should still keep the OS updated, run `openclaw security audit`, and verify you aren’t accidentally listening on public interfaces.
+This setup often removes the _need_ for extra host-based firewall rules purely to stop Internet-wide SSH brute force, but you should still keep the OS updated, run `openclaw security audit`, and verify you aren’t accidentally listening on public interfaces.
 
 ### What's Already Protected
 
@@ -283,8 +283,8 @@ Most npm packages work fine. For binaries, look for `linux-arm64` or `aarch64` r
 
 All state lives in:
 
-- `~/.openclaw/` — config, credentials, session data
-- `~/.openclaw/workspace/` — workspace (SOUL.md, memory, artifacts)
+- `~/.openclaw/`: config, credentials, session data
+- `~/.openclaw/workspace/`: workspace (SOUL.md, memory, artifacts)
 
 Back up periodically:
 
@@ -296,8 +296,8 @@ tar -czvf openclaw-backup.tar.gz ~/.openclaw ~/.openclaw/workspace
 
 ## See Also
 
-- [Gateway remote access](/gateway/remote) — other remote access patterns
-- [Tailscale integration](/gateway/tailscale) — full Tailscale docs
-- [Gateway configuration](/gateway/configuration) — all config options
-- [DigitalOcean guide](/platforms/digitalocean) — if you want paid + easier signup
-- [Hetzner guide](/platforms/hetzner) — Docker-based alternative
+- [Gateway remote access](/gateway/remote): other remote access patterns
+- [Tailscale integration](/gateway/tailscale): full Tailscale docs
+- [Gateway configuration](/gateway/configuration): all config options
+- [DigitalOcean guide](/platforms/digitalocean): if you want paid + easier signup
+- [Hetzner guide](/platforms/hetzner): Docker-based alternative

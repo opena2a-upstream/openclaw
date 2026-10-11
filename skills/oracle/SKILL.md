@@ -22,7 +22,7 @@ metadata:
   }
 ---
 
-# oracle — best use
+# oracle: best use
 
 Oracle bundles your prompt + selected files into one “one-shot” request so another model can answer with real repo context (API or browser automation). Treat output as advisory: verify against code + tests.
 

@@ -11,16 +11,16 @@ requires: prose.md
 
 > **This is a skin layer.** It requires `prose.md` to be loaded first. All execution semantics, state management, and VM behavior are defined there. This file only provides keyword translations.
 
-An alternative register for OpenProse that draws from Greek epic poetry—the Iliad, the Odyssey, and the heroic tradition. Programs become quests. Agents become heroes. Outputs become glory won.
+An alternative register for OpenProse that draws from Greek epic poetry: the Iliad, the Odyssey, and the heroic tradition. Programs become quests. Agents become heroes. Outputs become glory won.
 
 ## How to Use
 
 1. Load `prose.md` first (execution semantics)
 2. Load this file (keyword translations)
 3. When parsing `.prose` files, accept Homeric keywords as aliases for functional keywords
-4. All execution behavior remains identical—only surface syntax changes
+4. All execution behavior remains identical. Only surface syntax changes
 
-> **Design constraint:** Still aims to be "structured but self-evident" per the language tenets—just self-evident through an epic lens.
+> **Design constraint:** Still aims to be "structured but self-evident" per the language tenets, just self-evident through an epic lens.
 
 ---
 
@@ -39,11 +39,11 @@ An alternative register for OpenProse that draws from Greek epic poetry—the Il
 
 | Functional | Homeric   | Reference                              |
 | ---------- | --------- | -------------------------------------- |
-| `use`      | `invoke`  | "Sing, O Muse..." — calling upon       |
+| `use`      | `invoke`  | "Sing, O Muse...": calling upon        |
 | `input`    | `omen`    | Signs from the gods, the given portent |
-| `output`   | `glory`   | Kleos — the glory won, what endures    |
+| `output`   | `glory`   | Kleos: the glory won, what endures     |
 | `let`      | `decree`  | Fate declared, spoken into being       |
-| `const`    | `fate`    | Moira — unchangeable destiny           |
+| `const`    | `fate`    | Moira: unchangeable destiny            |
 | `context`  | `tidings` | News carried by herald or messenger    |
 
 ### Control Flow
@@ -66,7 +66,7 @@ An alternative register for OpenProse that draws from Greek epic poetry—the Il
 | Functional | Homeric            | Reference                    |
 | ---------- | ------------------ | ---------------------------- |
 | `try`      | `venture`          | Setting forth on the journey |
-| `catch`    | `should ruin come` | Até — divine ruin, disaster  |
+| `catch`    | `should ruin come` | Até: divine ruin, disaster   |
 | `finally`  | `in the end`       | The inevitable conclusion    |
 | `throw`    | `lament`           | The hero's cry of anguish    |
 | `retry`    | `persist`          | Enduring, trying again       |
@@ -82,12 +82,12 @@ An alternative register for OpenProse that draws from Greek epic poetry—the Il
 
 These keywords already work or are too functional to replace sensibly:
 
-- `**...**` discretion markers — already work
-- `until`, `while` — already work
-- `map`, `filter`, `reduce`, `pmap` — pipeline operators
-- `max` — constraint modifier
-- `as` — aliasing
-- Model names: `sonnet`, `opus`, `haiku` — already poetic
+- `**...**` discretion markers: already work
+- `until`, `while`: already work
+- `map`, `filter`, `reduce`, `pmap`: pipeline operators
+- `max`: constraint modifier
+- `as`: aliasing
+- Model names (`sonnet`, `opus`, `haiku`): already poetic
 
 ---
 
@@ -281,7 +281,7 @@ fate config = { muse: "opus", persist: 3 }
 
 1. **Universal recognition.** Greek epics are foundational to Western literature.
 2. **Heroic framing.** Transforms mundane tasks into glorious trials.
-3. **Natural fit.** Heroes face trials, receive tidings, win glory—maps cleanly to agent/session/output.
+3. **Natural fit.** Heroes face trials, receive tidings, win glory. This maps cleanly to agent/session/output.
 4. **Gravitas.** When you want programs to feel epic and consequential.
 5. **Fate vs decree.** `const` as `fate` (unchangeable) vs `let` as `decree` (declared but mutable) is intuitive.
 

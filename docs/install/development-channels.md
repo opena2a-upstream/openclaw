@@ -17,7 +17,7 @@ OpenClaw ships three update channels:
 - **dev**: moving head of `main` (git). npm dist-tag: `dev` (when published).
 
 We ship builds to **beta**, test them, then **promote a vetted build to `latest`**
-without changing the version number — dist-tags are the source of truth for npm installs.
+without changing the version number. Dist-tags are the source of truth for npm installs.
 
 ## Switching channels
 

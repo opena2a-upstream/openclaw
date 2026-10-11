@@ -25,12 +25,12 @@ per-session workspaces under `agents.defaults.sandbox.workspaceRoot` (see
 
 Inside `agents.defaults.workspace`, OpenClaw expects these user-editable files:
 
-- `AGENTS.md` — operating instructions + “memory”
-- `SOUL.md` — persona, boundaries, tone
-- `TOOLS.md` — user-maintained tool notes (e.g. `imsg`, `sag`, conventions)
-- `BOOTSTRAP.md` — one-time first-run ritual (deleted after completion)
-- `IDENTITY.md` — agent name/vibe/emoji
-- `USER.md` — user profile + preferred address
+- `AGENTS.md`: operating instructions + “memory”
+- `SOUL.md`: persona, boundaries, tone
+- `TOOLS.md`: user-maintained tool notes (e.g. `imsg`, `sag`, conventions)
+- `BOOTSTRAP.md`: one-time first-run ritual (deleted after completion)
+- `IDENTITY.md`: agent name/vibe/emoji
+- `USER.md`: user profile + preferred address
 
 On the first turn of a new session, OpenClaw injects the contents of these files directly into the agent context.
 

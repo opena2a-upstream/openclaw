@@ -9,7 +9,7 @@ title: "Ansible"
 
 # Ansible Installation
 
-The recommended way to deploy OpenClaw to production servers is via **[openclaw-ansible](https://github.com/openclaw/openclaw-ansible)** — an automated installer with security-first architecture.
+The recommended way to deploy OpenClaw to production servers is via **[openclaw-ansible](https://github.com/openclaw/openclaw-ansible)**, an automated installer with security-first architecture.
 
 ## Quick Start
 
@@ -202,7 +202,7 @@ For detailed security architecture and troubleshooting:
 
 ## Related
 
-- [openclaw-ansible](https://github.com/openclaw/openclaw-ansible) — full deployment guide
-- [Docker](/install/docker) — containerized gateway setup
-- [Sandboxing](/gateway/sandboxing) — agent sandbox configuration
-- [Multi-Agent Sandbox & Tools](/multi-agent-sandbox-tools) — per-agent isolation
+- [openclaw-ansible](https://github.com/openclaw/openclaw-ansible): full deployment guide
+- [Docker](/install/docker): containerized gateway setup
+- [Sandboxing](/gateway/sandboxing): agent sandbox configuration
+- [Multi-Agent Sandbox & Tools](/multi-agent-sandbox-tools): per-agent isolation

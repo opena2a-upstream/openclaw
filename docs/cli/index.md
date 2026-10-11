@@ -241,19 +241,19 @@ Note: plugins can add additional top-level commands (for example `openclaw voice
 
 ## Security
 
-- `openclaw security audit` — audit config + local state for common security foot-guns.
-- `openclaw security audit --deep` — best-effort live Gateway probe.
-- `openclaw security audit --fix` — tighten safe defaults and chmod state/config.
+- `openclaw security audit`: audit config + local state for common security foot-guns.
+- `openclaw security audit --deep`: best-effort live Gateway probe.
+- `openclaw security audit --fix`: tighten safe defaults and chmod state/config.
 
 ## Plugins
 
 Manage extensions and their config:
 
-- `openclaw plugins list` — discover plugins (use `--json` for machine output).
-- `openclaw plugins info <id>` — show details for a plugin.
-- `openclaw plugins install <path|.tgz|npm-spec>` — install a plugin (or add a plugin path to `plugins.load.paths`).
-- `openclaw plugins enable <id>` / `disable <id>` — toggle `plugins.entries.<id>.enabled`.
-- `openclaw plugins doctor` — report plugin load errors.
+- `openclaw plugins list`: discover plugins (use `--json` for machine output).
+- `openclaw plugins info <id>`: show details for a plugin.
+- `openclaw plugins install <path|.tgz|npm-spec>`: install a plugin (or add a plugin path to `plugins.load.paths`).
+- `openclaw plugins enable <id>` / `disable <id>`: toggle `plugins.entries.<id>.enabled`.
+- `openclaw plugins doctor`: report plugin load errors.
 
 Most plugin changes require a gateway restart. See [/plugin](/plugin).
 
@@ -261,9 +261,9 @@ Most plugin changes require a gateway restart. See [/plugin](/plugin).
 
 Vector search over `MEMORY.md` + `memory/*.md`:
 
-- `openclaw memory status` — show index stats.
-- `openclaw memory index` — reindex memory files.
-- `openclaw memory search "<query>"` — semantic search over memory.
+- `openclaw memory status`: show index stats.
+- `openclaw memory index`: reindex memory files.
+- `openclaw memory search "<query>"`: semantic search over memory.
 
 ## Chat slash commands
 

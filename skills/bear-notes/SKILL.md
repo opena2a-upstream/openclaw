@@ -76,11 +76,11 @@ grizzly open-tag --name "work" --enable-callback --json
 
 Common flags:
 
-- `--dry-run` — Preview the URL without executing
-- `--print-url` — Show the x-callback-url
-- `--enable-callback` — Wait for Bear's response (needed for reading data)
-- `--json` — Output as JSON (when using callbacks)
-- `--token-file PATH` — Path to Bear API token file
+- `--dry-run`: Preview the URL without executing
+- `--print-url`: Show the x-callback-url
+- `--enable-callback`: Wait for Bear's response (needed for reading data)
+- `--json`: Output as JSON (when using callbacks)
+- `--token-file PATH`: Path to Bear API token file
 
 ## Configuration
 

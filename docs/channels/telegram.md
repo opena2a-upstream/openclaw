@@ -49,8 +49,8 @@ Minimal config:
 
 Optional BotFather settings:
 
-- `/setjoingroups` — allow/deny adding the bot to groups.
-- `/setprivacy` — control whether the bot sees all group messages.
+- `/setjoingroups`: allow/deny adding the bot to groups.
+- `/setprivacy`: control whether the bot sees all group messages.
 
 ### 2) Configure the token (env or config)
 
@@ -302,11 +302,11 @@ For per-account configuration:
 
 Scopes:
 
-- `off` — inline buttons disabled
-- `dm` — only DMs (group targets blocked)
-- `group` — only groups (DM targets blocked)
-- `all` — DMs + groups
-- `allowlist` — DMs + groups, but only senders allowed by `allowFrom`/`groupAllowFrom` (same rules as control commands)
+- `off`: inline buttons disabled
+- `dm`: only DMs (group targets blocked)
+- `group`: only groups (DM targets blocked)
+- `all`: DMs + groups
+- `allowlist`: DMs + groups, but only senders allowed by `allowFrom`/`groupAllowFrom` (same rules as control commands)
 
 Default: `allowlist`.
 Legacy: `capabilities: ["inlineButtons"]` = `inlineButtons: "all"`.
@@ -403,8 +403,8 @@ Most users want: `groupPolicy: "allowlist"` + `groupAllowFrom` + specific groups
 
 Telegram supports optional threaded replies via tags:
 
-- `[[reply_to_current]]` -- reply to the triggering message.
-- `[[reply_to:<id>]]` -- reply to a specific message id.
+- `[[reply_to_current]]`: reply to the triggering message.
+- `[[reply_to:<id>]]`: reply to a specific message id.
 
 Controlled by `channels.telegram.replyToMode`:
 
@@ -417,7 +417,7 @@ OpenClaw defaults to audio files for backward compatibility.
 
 To force a voice note bubble in agent replies, include this tag anywhere in the reply:
 
-- `[[audio_as_voice]]` — send audio as a voice note instead of a file.
+- `[[audio_as_voice]]`: send audio as a voice note instead of a file.
 
 The tag is stripped from the delivered text. Other channels ignore this tag.
 
@@ -448,12 +448,12 @@ When a user sends a sticker, OpenClaw handles it based on the sticker type:
 
 Template context field available when receiving stickers:
 
-- `Sticker` — object with:
-  - `emoji` — emoji associated with the sticker
-  - `setName` — name of the sticker set
-  - `fileId` — Telegram file ID (send the same sticker back)
-  - `fileUniqueId` — stable ID for cache lookup
-  - `cachedDescription` — cached vision description when available
+- `Sticker`, an object with:
+  - `emoji`: emoji associated with the sticker
+  - `setName`: name of the sticker set
+  - `fileId`: Telegram file ID (send the same sticker back)
+  - `fileUniqueId`: stable ID for cache lookup
+  - `cachedDescription`: cached vision description when available
 
 ### Sticker cache
 
@@ -517,9 +517,9 @@ The agent can send and search stickers using the `sticker` and `sticker-search` 
 
 Parameters:
 
-- `fileId` (required) — the Telegram file ID of the sticker. Obtain this from `Sticker.fileId` when receiving a sticker, or from a `sticker-search` result.
-- `replyTo` (optional) — message ID to reply to.
-- `threadId` (optional) — message thread ID for forum topics.
+- `fileId` (required): the Telegram file ID of the sticker. Obtain this from `Sticker.fileId` when receiving a sticker, or from a `sticker-search` result.
+- `replyTo` (optional): message ID to reply to.
+- `threadId` (optional): message thread ID for forum topics.
 
 **Search for stickers:**
 
@@ -626,15 +626,15 @@ The agent sees reactions as **system notifications** in the conversation history
 **Configuration:**
 
 - `channels.telegram.reactionNotifications`: Controls which reactions trigger notifications
-  - `"off"` — ignore all reactions
-  - `"own"` — notify when users react to bot messages (best-effort; in-memory) (default)
-  - `"all"` — notify for all reactions
+  - `"off"`: ignore all reactions
+  - `"own"`: notify when users react to bot messages (best-effort; in-memory) (default)
+  - `"all"`: notify for all reactions
 
 - `channels.telegram.reactionLevel`: Controls agent's reaction capability
-  - `"off"` — agent cannot react to messages
-  - `"ack"` — bot sends acknowledgment reactions (👀 while processing) (default)
-  - `"minimal"` — agent can react sparingly (guideline: 1 per 5-10 exchanges)
-  - `"extensive"` — agent can react liberally when appropriate
+  - `"off"`: agent cannot react to messages
+  - `"ack"`: bot sends acknowledgment reactions (👀 while processing) (default)
+  - `"minimal"`: agent can react sparingly (guideline: 1 per 5-10 exchanges)
+  - `"extensive"`: agent can react liberally when appropriate
 
 **Forum groups:** Reactions in forum groups include `message_thread_id` and use session keys like `agent:main:telegram:group:{chatId}:topic:{threadId}`. This ensures reactions and messages in the same topic stay together.
 
@@ -738,9 +738,9 @@ Provider options:
 - `channels.telegram.actions.reactions`: gate Telegram tool reactions.
 - `channels.telegram.actions.sendMessage`: gate Telegram tool message sends.
 - `channels.telegram.actions.deleteMessage`: gate Telegram tool message deletes.
-- `channels.telegram.actions.sticker`: gate Telegram sticker actions — send and search (default: false).
-- `channels.telegram.reactionNotifications`: `off | own | all` — control which reactions trigger system events (default: `own` when not set).
-- `channels.telegram.reactionLevel`: `off | ack | minimal | extensive` — control agent's reaction capability (default: `minimal` when not set).
+- `channels.telegram.actions.sticker`: gate Telegram sticker actions, send and search (default: false).
+- `channels.telegram.reactionNotifications`: `off | own | all`, controls which reactions trigger system events (default: `own` when not set).
+- `channels.telegram.reactionLevel`: `off | ack | minimal | extensive`, controls agent's reaction capability (default: `minimal` when not set).
 
 Related global options:
 

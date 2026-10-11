@@ -15,7 +15,7 @@ deployments work at a high level.
 
 - **Railway** (one‑click + browser setup): [Railway](/railway)
 - **Northflank** (one‑click + browser setup): [Northflank](/northflank)
-- **Oracle Cloud (Always Free)**: [Oracle](/platforms/oracle) — $0/month (Always Free, ARM; capacity/signup can be finicky)
+- **Oracle Cloud (Always Free)**: [Oracle](/platforms/oracle), $0/month (Always Free, ARM; capacity/signup can be finicky)
 - **Fly.io**: [Fly.io](/platforms/fly)
 - **Hetzner (Docker)**: [Hetzner](/platforms/hetzner)
 - **GCP (Compute Engine)**: [GCP](/platforms/gcp)

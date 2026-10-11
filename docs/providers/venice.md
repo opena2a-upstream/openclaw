@@ -10,7 +10,7 @@ title: "Venice AI"
 
 **Venice** is our highlight Venice setup for privacy-first inference with optional anonymized access to proprietary models.
 
-Venice AI provides privacy-focused AI inference with support for uncensored models and access to major proprietary models through their anonymized proxy. All inference is private by default—no training on your data, no logging.
+Venice AI provides privacy-focused AI inference with support for uncensored models and access to major proprietary models through their anonymized proxy. All inference is private by default: no training on your data, no logging.
 
 ## Why Venice in OpenClaw
 
@@ -21,7 +21,7 @@ Venice AI provides privacy-focused AI inference with support for uncensored mode
 
 ## Privacy Modes
 
-Venice offers two privacy levels — understanding this is key to choosing your model:
+Venice offers two privacy levels. Understanding this is key to choosing your model:
 
 | Mode           | Description                                                                                                          | Models                                         |
 | -------------- | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
@@ -125,7 +125,7 @@ openclaw models list | grep venice
 
 ## Available Models (25 Total)
 
-### Private Models (15) — Fully Private, No Logging
+### Private Models (15): Fully Private, No Logging
 
 | Model ID                         | Name                    | Context (tokens) | Features                |
 | -------------------------------- | ----------------------- | ---------------- | ----------------------- |
@@ -145,7 +145,7 @@ openclaw models list | grep venice
 | `openai-gpt-oss-120b`            | OpenAI GPT OSS 120B     | 131k             | General                 |
 | `zai-org-glm-4.7`                | GLM 4.7                 | 202k             | Reasoning, multilingual |
 
-### Anonymized Models (10) — Via Venice Proxy
+### Anonymized Models (10): Via Venice Proxy
 
 | Model ID                 | Original          | Context (tokens) | Features          |
 | ------------------------ | ----------------- | ---------------- | ----------------- |

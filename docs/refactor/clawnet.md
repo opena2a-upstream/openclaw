@@ -10,7 +10,7 @@ title: "Clawnet Refactor"
 
 ## Hi
 
-Hi Peter — great direction; this unlocks simpler UX + stronger security.
+Hi Peter. Great direction; this unlocks simpler UX + stronger security.
 
 ## Purpose
 

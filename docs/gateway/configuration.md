@@ -55,11 +55,11 @@ use `config.patch` or `openclaw config set`. Keep a backup of `~/.openclaw/openc
 
 Params:
 
-- `raw` (string) — JSON5 payload for the entire config
-- `baseHash` (optional) — config hash from `config.get` (required when a config already exists)
-- `sessionKey` (optional) — last active session key for the wake-up ping
-- `note` (optional) — note to include in the restart sentinel
-- `restartDelayMs` (optional) — delay before restart (default 2000)
+- `raw` (string): JSON5 payload for the entire config
+- `baseHash` (optional): config hash from `config.get` (required when a config already exists)
+- `sessionKey` (optional): last active session key for the wake-up ping
+- `note` (optional): note to include in the restart sentinel
+- `restartDelayMs` (optional): delay before restart (default 2000)
 
 Example (via `gateway call`):
 
@@ -86,11 +86,11 @@ unrelated keys. It applies JSON merge patch semantics:
 
 Params:
 
-- `raw` (string) — JSON5 payload containing just the keys to change
-- `baseHash` (required) — config hash from `config.get`
-- `sessionKey` (optional) — last active session key for the wake-up ping
-- `note` (optional) — note to include in the restart sentinel
-- `restartDelayMs` (optional) — delay before restart (default 2000)
+- `raw` (string): JSON5 payload containing just the keys to change
+- `baseHash` (required): config hash from `config.get`
+- `sessionKey` (optional): last active session key for the wake-up ping
+- `note` (optional): note to include in the restart sentinel
+- `restartDelayMs` (optional): delay before restart (default 2000)
 
 Example:
 
@@ -1681,7 +1681,7 @@ Each `agents.defaults.models` entry can include:
 - `alias` (optional model shortcut, e.g. `/opus`).
 - `params` (optional provider-specific API params passed through to the model request).
 
-`params` is also applied to streaming runs (embedded agent + compaction). Supported keys today: `temperature`, `maxTokens`. These merge with call-time options; caller-supplied values win. `temperature` is an advanced knob—leave unset unless you know the model’s defaults and need a change.
+`params` is also applied to streaming runs (embedded agent + compaction). Supported keys today: `temperature`, `maxTokens`. These merge with call-time options; caller-supplied values win. `temperature` is an advanced knob. Leave it unset unless you know the model’s defaults and need a change.
 
 Example:
 
@@ -2500,7 +2500,7 @@ Notes:
 }
 ```
 
-### Z.AI (GLM-4.7) — provider alias support
+### Z.AI (GLM-4.7): provider alias support
 
 Z.AI models are available via the built-in `zai` provider. Set `ZAI_API_KEY`
 in your environment and reference the model by provider/model.
@@ -2639,7 +2639,7 @@ Notes:
 - Model ref: `synthetic/hf:MiniMaxAI/MiniMax-M2.1`.
 - Base URL should omit `/v1` because the Anthropic client appends it.
 
-### Local models (LM Studio) — recommended setup
+### Local models (LM Studio): recommended setup
 
 See [/gateway/local-models](/gateway/local-models) for the current local guidance. TL;DR: run MiniMax M2.1 via LM Studio Responses API on serious hardware; keep hosted models merged for fallback.
 

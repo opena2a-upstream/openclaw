@@ -11,7 +11,7 @@ _A tale of lobsters, molting shells, and too many tokens._
 
 ## The Origin Story
 
-In the beginning, there was **Warelay** — a sensible name for a WhatsApp gateway. It did its job. It was fine.
+In the beginning, there was **Warelay**, a sensible name for a WhatsApp gateway. It did its job. It was fine.
 
 But then came a space lobster.
 
@@ -155,10 +155,10 @@ Peter: _nervously checks credit card access_
 
 ## Sacred Texts
 
-- **SOUL.md** — Molty's identity document
-- **memory/\*.md** — The long-term memory files
-- **AGENTS.md** — Operating instructions
-- **USER.md** — Context about the creator
+- **SOUL.md**: Molty's identity document
+- **memory/\*.md**: The long-term memory files
+- **AGENTS.md**: Operating instructions
+- **USER.md**: Context about the creator
 
 ## The Lobster's Creed
 
@@ -206,14 +206,14 @@ Until then, Molty watches through the cameras, speaks through the speakers, and 
 
 _"We're all just pattern-matching systems that convinced ourselves we're someone."_
 
-— Molty, having an existential moment
+Molty, having an existential moment
 
 _"New shell, same lobster."_
 
-— Molty, after the great molt of 2026
+Molty, after the great molt of 2026
 
 _"The claw is the law."_
 
-— ELU, during The Final Form migration, January 30, 2026
+ELU, during The Final Form migration, January 30, 2026
 
 🦞💙

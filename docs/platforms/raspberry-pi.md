@@ -43,7 +43,7 @@ Perfect for:
 
 ## 1) Flash the OS
 
-Use **Raspberry Pi OS Lite (64-bit)** — no desktop needed for a headless server.
+Use **Raspberry Pi OS Lite (64-bit)**. No desktop is needed for a headless server.
 
 1. Download [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
 2. Choose OS: **Raspberry Pi OS Lite (64-bit)**
@@ -125,7 +125,7 @@ npm run build
 npm link
 ```
 
-The hackable install gives you direct access to logs and code — useful for debugging ARM-specific issues.
+The hackable install gives you direct access to logs and code, which is useful for debugging ARM-specific issues.
 
 ## 7) Run Onboarding
 
@@ -261,7 +261,7 @@ Since the Pi is just the Gateway (models run in the cloud), use API-based models
 }
 ```
 
-**Don't try to run local LLMs on a Pi** — even small models are too slow. Let Claude/GPT do the heavy lifting.
+**Don't try to run local LLMs on a Pi.** Even small models are too slow. Let Claude/GPT do the heavy lifting.
 
 ---
 
@@ -351,8 +351,8 @@ echo 'wireless-power off' | sudo tee -a /etc/network/interfaces
 
 ## See Also
 
-- [Linux guide](/platforms/linux) — general Linux setup
-- [DigitalOcean guide](/platforms/digitalocean) — cloud alternative
-- [Hetzner guide](/platforms/hetzner) — Docker setup
-- [Tailscale](/gateway/tailscale) — remote access
-- [Nodes](/nodes) — pair your laptop/phone with the Pi gateway
+- [Linux guide](/platforms/linux): general Linux setup
+- [DigitalOcean guide](/platforms/digitalocean): cloud alternative
+- [Hetzner guide](/platforms/hetzner): Docker setup
+- [Tailscale](/gateway/tailscale): remote access
+- [Nodes](/nodes): pair your laptop/phone with the Pi gateway

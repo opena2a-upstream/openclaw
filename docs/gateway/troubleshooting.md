@@ -458,7 +458,7 @@ OpenClaw keeps conversation history in memory.
 
 ## Common troubleshooting
 
-### “Gateway won’t start — configuration invalid”
+### “Gateway won’t start: configuration invalid”
 
 OpenClaw now refuses to start when the config contains unknown keys, malformed values, or invalid types.
 This is intentional for safety.
@@ -476,14 +476,14 @@ Notes:
 - `openclaw doctor --fix` applies migrations/repairs and rewrites the config.
 - Diagnostic commands like `openclaw logs`, `openclaw health`, `openclaw status`, `openclaw gateway status`, and `openclaw gateway probe` still run even if the config is invalid.
 
-### “All models failed” — what should I check first?
+### “All models failed”: what should I check first?
 
 - **Credentials** present for the provider(s) being tried (auth profiles + env vars).
 - **Model routing**: confirm `agents.defaults.model.primary` and fallbacks are models you can access.
 - **Gateway logs** in `/tmp/openclaw/…` for the exact provider error.
 - **Model status**: use `/model status` (chat) or `openclaw models status` (CLI).
 
-### I’m running on my personal WhatsApp number — why is self-chat weird?
+### I’m running on my personal WhatsApp number: why is self-chat weird?
 
 Enable self-chat mode and allowlist your own number:
 
@@ -509,7 +509,7 @@ Run the login command again and scan the QR code:
 openclaw channels login
 ```
 
-### Build errors on `main` — what’s the standard fix path?
+### Build errors on `main`: what’s the standard fix path?
 
 1. `git pull origin main && pnpm install`
 2. `openclaw doctor`
@@ -737,7 +737,7 @@ openclaw gateway restart           # or: openclaw gateway
 
 ---
 
-_"Have you tried turning it off and on again?"_ — Every IT person ever
+_"Have you tried turning it off and on again?"_ (every IT person ever)
 
 🦞🔧
 

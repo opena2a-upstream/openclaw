@@ -61,7 +61,7 @@ WhatsApp requires a real mobile number for verification. VoIP and virtual number
 
 Use a **separate phone number** for OpenClaw. Best UX, clean routing, no self-chat quirks. Ideal setup: **spare/old Android phone + eSIM**. Leave it on Wi‑Fi and power, and link it via QR.
 
-**WhatsApp Business:** You can use WhatsApp Business on the same device with a different number. Great for keeping your personal WhatsApp separate — install WhatsApp Business and register the OpenClaw number there.
+**WhatsApp Business:** You can use WhatsApp Business on the same device with a different number. Great for keeping your personal WhatsApp separate: install WhatsApp Business and register the OpenClaw number there.
 
 **Sample config (dedicated number, single-user allowlist):**
 
@@ -105,10 +105,10 @@ the prefix (use `""` to remove it).
 
 - **Local eSIM** from your country's mobile carrier (most reliable)
   - Austria: [hot.at](https://www.hot.at)
-  - UK: [giffgaff](https://www.giffgaff.com) — free SIM, no contract
-- **Prepaid SIM** — cheap, just needs to receive one SMS for verification
+  - UK: [giffgaff](https://www.giffgaff.com), free SIM, no contract
+- **Prepaid SIM**: cheap, just needs to receive one SMS for verification
 
-**Avoid:** TextNow, Google Voice, most "free SMS" services — WhatsApp blocks these aggressively.
+**Avoid:** TextNow, Google Voice, most "free SMS" services. WhatsApp blocks these aggressively.
 
 **Tip:** The number only needs to receive one verification SMS. After that, WhatsApp Web sessions persist via `creds.json`.
 

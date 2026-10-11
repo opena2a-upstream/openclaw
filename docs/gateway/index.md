@@ -138,25 +138,25 @@ OPENCLAW_CONFIG_PATH=~/.openclaw/b.json OPENCLAW_STATE_DIR=~/.openclaw-b opencla
 
 ## Methods (initial set)
 
-- `health` — full health snapshot (same shape as `openclaw health --json`).
-- `status` — short summary.
-- `system-presence` — current presence list.
-- `system-event` — post a presence/system note (structured).
-- `send` — send a message via the active channel(s).
-- `agent` — run an agent turn (streams events back on same connection).
-- `node.list` — list paired + currently-connected nodes (includes `caps`, `deviceFamily`, `modelIdentifier`, `paired`, `connected`, and advertised `commands`).
-- `node.describe` — describe a node (capabilities + supported `node.invoke` commands; works for paired nodes and for currently-connected unpaired nodes).
-- `node.invoke` — invoke a command on a node (e.g. `canvas.*`, `camera.*`).
-- `node.pair.*` — pairing lifecycle (`request`, `list`, `approve`, `reject`, `verify`).
+- `health`: full health snapshot (same shape as `openclaw health --json`).
+- `status`: short summary.
+- `system-presence`: current presence list.
+- `system-event`: post a presence/system note (structured).
+- `send`: send a message via the active channel(s).
+- `agent`: run an agent turn (streams events back on same connection).
+- `node.list`: list paired + currently-connected nodes (includes `caps`, `deviceFamily`, `modelIdentifier`, `paired`, `connected`, and advertised `commands`).
+- `node.describe`: describe a node (capabilities + supported `node.invoke` commands; works for paired nodes and for currently-connected unpaired nodes).
+- `node.invoke`: invoke a command on a node (e.g. `canvas.*`, `camera.*`).
+- `node.pair.*`: pairing lifecycle (`request`, `list`, `approve`, `reject`, `verify`).
 
 See also: [Presence](/concepts/presence) for how presence is produced/deduped and why a stable `client.instanceId` matters.
 
 ## Events
 
-- `agent` — streamed tool/output events from the agent run (seq-tagged).
-- `presence` — presence updates (deltas with stateVersion) pushed to all connected clients.
-- `tick` — periodic keepalive/no-op to confirm liveness.
-- `shutdown` — Gateway is exiting; payload includes `reason` and optional `restartExpectedMs`. Clients should reconnect.
+- `agent`: streamed tool/output events from the agent run (seq-tagged).
+- `presence`: presence updates (deltas with stateVersion) pushed to all connected clients.
+- `tick`: periodic keepalive/no-op to confirm liveness.
+- `shutdown`: Gateway is exiting; payload includes `reason` and optional `restartExpectedMs`. Clients should reconnect.
 
 ## WebChat integration
 
@@ -181,10 +181,10 @@ See also: [Presence](/concepts/presence) for how presence is produced/deduped an
 
 - Errors use `{ code, message, details?, retryable?, retryAfterMs? }`.
 - Standard codes:
-  - `NOT_LINKED` — WhatsApp not authenticated.
-  - `AGENT_TIMEOUT` — agent did not respond within the configured deadline.
-  - `INVALID_REQUEST` — schema/param validation failed.
-  - `UNAVAILABLE` — Gateway is shutting down or a dependency is unavailable.
+  - `NOT_LINKED`: WhatsApp not authenticated.
+  - `AGENT_TIMEOUT`: agent did not respond within the configured deadline.
+  - `INVALID_REQUEST`: schema/param validation failed.
+  - `UNAVAILABLE`: Gateway is shutting down or a dependency is unavailable.
 
 ## Keepalive behavior
 
@@ -315,11 +315,11 @@ Windows installs should use **WSL2** and follow the Linux systemd section above.
 
 ## CLI helpers
 
-- `openclaw gateway health|status` — request health/status over the Gateway WS.
-- `openclaw message send --target <num> --message "hi" [--media ...]` — send via Gateway (idempotent for WhatsApp).
-- `openclaw agent --message "hi" --to <num>` — run an agent turn (waits for final by default).
-- `openclaw gateway call <method> --params '{"k":"v"}'` — raw method invoker for debugging.
-- `openclaw gateway stop|restart` — stop/restart the supervised gateway service (launchd/systemd).
+- `openclaw gateway health|status`: request health/status over the Gateway WS.
+- `openclaw message send --target <num> --message "hi" [--media ...]`: send via Gateway (idempotent for WhatsApp).
+- `openclaw agent --message "hi" --to <num>`: run an agent turn (waits for final by default).
+- `openclaw gateway call <method> --params '{"k":"v"}'`: raw method invoker for debugging.
+- `openclaw gateway stop|restart`: stop/restart the supervised gateway service (launchd/systemd).
 - Gateway helper subcommands assume a running gateway on `--url`; they no longer auto-spawn one.
 
 ## Migration guidance

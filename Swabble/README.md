@@ -1,4 +1,4 @@
-# 🎙️ swabble — Speech.framework wake-word hook daemon (macOS 26)
+# 🎙️ swabble: Speech.framework wake-word hook daemon (macOS 26)
 
 swabble is a Swift 6.2 wake-word hook daemon. The CLI targets macOS 26 (SpeechAnalyzer + SpeechTranscriber). The shared `SwabbleKit` target is multi-platform and exposes wake-word gating utilities for iOS/macOS apps.
 
@@ -47,17 +47,17 @@ targets: [
 ```
 
 ## CLI
-- `serve` — foreground loop (mic → wake → hook)
-- `transcribe <file>` — offline transcription (txt|srt)
-- `test-hook "text"` — invoke configured hook
-- `mic list|set <index>` — enumerate/select input device
-- `setup` — write default config JSON
-- `doctor` — check Speech auth & device availability
-- `health` — prints `ok`
-- `tail-log` — last 10 transcripts
-- `status` — show wake state + recent transcripts
-- `service install|uninstall|status` — user launchd plist (stub: prints launchctl commands)
-- `start|stop|restart` — placeholders until full launchd wiring
+- `serve`: foreground loop (mic → wake → hook)
+- `transcribe <file>`: offline transcription (txt|srt)
+- `test-hook "text"`: invoke configured hook
+- `mic list|set <index>`: enumerate/select input device
+- `setup`: write default config JSON
+- `doctor`: check Speech auth & device availability
+- `health`: prints `ok`
+- `tail-log`: last 10 transcripts
+- `status`: show wake state + recent transcripts
+- `service install|uninstall|status`: user launchd plist (stub: prints launchctl commands)
+- `start|stop|restart`: placeholders until full launchd wiring
 
 All commands accept Commander runtime flags (`-v/--verbose`, `--json-output`, `--log-level`), plus `--config` where applicable.
 
@@ -91,8 +91,8 @@ When a wake-gated transcript passes min_chars & cooldown, swabble runs:
 <command> <args...> "<prefix><text>"
 ```
 Environment variables:
-- `SWABBLE_TEXT` — stripped transcript (wake word removed)
-- `SWABBLE_PREFIX` — rendered prefix (hostname substituted)
+- `SWABBLE_TEXT`: stripped transcript (wake word removed)
+- `SWABBLE_PREFIX`: rendered prefix (hostname substituted)
 - plus any `hook.env` key/values
 
 ## Speech pipeline

@@ -77,7 +77,7 @@ When the audit prints findings, treat this as a priority order:
 The Control UI needs a **secure context** (HTTPS or localhost) to generate device
 identity. If you enable `gateway.controlUi.allowInsecureAuth`, the UI falls back
 to **token-only auth** and skips device pairing when device identity is omitted. This is a security
-downgrade—prefer HTTPS (Tailscale Serve) or open the UI on `127.0.0.1`.
+downgrade. Prefer HTTPS (Tailscale Serve) or open the UI on `127.0.0.1`.
 
 For break-glass scenarios only, `gateway.controlUi.dangerouslyDisableDeviceAuth`
 disables device identity checks entirely. This is a severe security downgrade;
@@ -144,7 +144,7 @@ People who message you can:
 
 ## Core concept: access control before intelligence
 
-Most failures here are not fancy exploits — they’re “someone messaged the bot and the bot did what they asked.”
+Most failures here are not fancy exploits. They’re “someone messaged the bot and the bot did what they asked.”
 
 OpenClaw’s stance:
 
@@ -216,7 +216,7 @@ Treat the snippet above as **secure DM mode**:
 
 If you run multiple accounts on the same channel, use `per-account-channel-peer` instead. If the same person contacts you on multiple channels, use `session.identityLinks` to collapse those DM sessions into one canonical identity. See [Session Management](/concepts/session) and [Configuration](/gateway/configuration).
 
-## Allowlists (DM + groups) — terminology
+## Allowlists (DM + groups): terminology
 
 OpenClaw has two separate “who can trigger me?” layers:
 
@@ -820,6 +820,6 @@ Found a vulnerability in OpenClaw? Please report responsibly:
 
 ---
 
-_"Security is a process, not a product. Also, don't trust lobsters with shell access."_ — Someone wise, probably
+_"Security is a process, not a product. Also, don't trust lobsters with shell access."_ (someone wise, probably)
 
 🦞🔐

@@ -24,8 +24,8 @@ When enabled and the trigger conditions match, the hook swaps the **injected** `
 
 ## Files
 
-- `SOUL.md` — normal persona (always read)
-- `SOUL_EVIL.md` — alternate persona (read only when triggered)
+- `SOUL.md`: normal persona (always read)
+- `SOUL_EVIL.md`: alternate persona (read only when triggered)
 
 You can change the filename via hook config.
 

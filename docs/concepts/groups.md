@@ -55,7 +55,7 @@ If you want...
 
 ## Pattern: personal DMs + public groups (single agent)
 
-Yes — this works well if your “personal” traffic is **DMs** and your “public” traffic is **groups**.
+Yes. This works well if your “personal” traffic is **DMs** and your “public” traffic is **groups**.
 
 Why: in single-agent mode, DMs typically land in the **main** session key (`agent:main:main`), while groups always use **non-main** session keys (`agent:main:<channel>:group:<id>`). If you enable sandboxing with `mode: "non-main"`, those group sessions run in Docker while your main DM session stays on-host.
 
