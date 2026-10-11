@@ -25,7 +25,7 @@ Note, selecting 'chromium-browser' instead of 'chromium'
 chromium-browser is already the newest version (2:1snap1-0ubuntu2).
 ```
 
-This is NOT a real browser — it's just a wrapper.
+This is NOT a real browser. It's just a wrapper.
 
 ### Solution 1: Install Google Chrome (Recommended)
 

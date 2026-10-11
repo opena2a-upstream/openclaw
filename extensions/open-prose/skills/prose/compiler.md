@@ -88,7 +88,7 @@ OpenProse provides a declarative syntax for defining multi-agent workflows. Prog
 
 ### Design Principles
 
-- **Pattern over framework**: The simplest solution is barely anything at all—just structure for English
+- **Pattern over framework**: The simplest solution is barely anything at all, just structure for English
 - **Self-evident**: Programs should be understandable with minimal documentation
 - **The OpenProse VM is intelligent**: Design for understanding, not parsing
 - **Framework-agnostic**: Works with Claude Code, OpenCode, and any future agent framework

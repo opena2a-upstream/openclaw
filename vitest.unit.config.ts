@@ -5,6 +5,7 @@ const baseTest = (baseConfig as { test?: { include?: string[]; exclude?: string[
 const include = baseTest.include ?? [
   "src/**/*.test.ts",
   "extensions/**/*.test.ts",
+  "scripts/**/*.test.ts",
   "test/format-error.test.ts",
 ];
 const exclude = baseTest.exclude ?? [];

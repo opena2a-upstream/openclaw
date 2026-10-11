@@ -723,7 +723,7 @@ loop until **no significant bugs found in last iteration** (max: 10):
 
 #### assertion-as-action
 
-Using conditions as actions—checking something without acting on the result.
+Using conditions as actions: checking something without acting on the result.
 
 ```prose
 # Bad: Check but don't use result

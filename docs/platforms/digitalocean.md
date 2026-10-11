@@ -194,8 +194,8 @@ htop
 
 All state lives in:
 
-- `~/.openclaw/` — config, credentials, session data
-- `~/.openclaw/workspace/` — workspace (SOUL.md, memory, etc.)
+- `~/.openclaw/`: config, credentials, session data
+- `~/.openclaw/workspace/`: workspace (SOUL.md, memory, etc.)
 
 These survive reboots. Back them up periodically:
 
@@ -207,7 +207,7 @@ tar -czvf openclaw-backup.tar.gz ~/.openclaw ~/.openclaw/workspace
 
 ## Oracle Cloud Free Alternative
 
-Oracle Cloud offers **Always Free** ARM instances that are significantly more powerful than any paid option here — for $0/month.
+Oracle Cloud offers **Always Free** ARM instances that are significantly more powerful than any paid option here, for $0/month.
 
 | What you get      | Specs                  |
 | ----------------- | ---------------------- |
@@ -219,7 +219,7 @@ Oracle Cloud offers **Always Free** ARM instances that are significantly more po
 **Caveats:**
 
 - Signup can be finicky (retry if it fails)
-- ARM architecture — most things work, but some binaries need ARM builds
+- ARM architecture: most things work, but some binaries need ARM builds
 
 For the full setup guide, see [Oracle Cloud](/platforms/oracle). For signup tips and troubleshooting the enrollment process, see this [community guide](https://gist.github.com/rssnyder/51e3cfedd730e7dd5f4a816143b25dbd).
 
@@ -256,7 +256,7 @@ free -h
 
 ## See Also
 
-- [Hetzner guide](/platforms/hetzner) — cheaper, more powerful
-- [Docker install](/install/docker) — containerized setup
-- [Tailscale](/gateway/tailscale) — secure remote access
-- [Configuration](/gateway/configuration) — full config reference
+- [Hetzner guide](/platforms/hetzner): cheaper, more powerful
+- [Docker install](/install/docker): containerized setup
+- [Tailscale](/gateway/tailscale): secure remote access
+- [Configuration](/gateway/configuration): full config reference

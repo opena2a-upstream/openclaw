@@ -8,13 +8,13 @@ Lobster executes multi-step workflows with approval checkpoints. Use it when:
 
 ## When to use Lobster
 
-| User intent                                            | Use Lobster?                                  |
-| ------------------------------------------------------ | --------------------------------------------- |
-| "Triage my email"                                      | Yes — multi-step, may send replies            |
-| "Send a message"                                       | No — single action, use message tool directly |
-| "Check my email every morning and ask before replying" | Yes — scheduled workflow with approval        |
-| "What's the weather?"                                  | No — simple query                             |
-| "Monitor this PR and notify me of changes"             | Yes — stateful, recurring                     |
+| User intent                                            | Use Lobster?                                 |
+| ------------------------------------------------------ | -------------------------------------------- |
+| "Triage my email"                                      | Yes: multi-step, may send replies            |
+| "Send a message"                                       | No: single action, use message tool directly |
+| "Check my email every morning and ask before replying" | Yes: scheduled workflow with approval        |
+| "What's the weather?"                                  | No: simple query                             |
+| "Monitor this PR and notify me of changes"             | Yes: stateful, recurring                     |
 
 ## Basic usage
 

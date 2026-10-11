@@ -29,8 +29,8 @@ Railway will either:
 
 Then open:
 
-- `https://<your-railway-domain>/setup` — setup wizard (password protected)
-- `https://<your-railway-domain>/openclaw` — Control UI
+- `https://<your-railway-domain>/setup`: setup wizard (password protected)
+- `https://<your-railway-domain>/openclaw`: Control UI
 
 ## What you get
 
@@ -58,7 +58,7 @@ Attach a volume mounted at:
 Set these variables on the service:
 
 - `SETUP_PASSWORD` (required)
-- `PORT=8080` (required — must match the port in Public Networking)
+- `PORT=8080` (required; must match the port in Public Networking)
 - `OPENCLAW_STATE_DIR=/data/.openclaw` (recommended)
 - `OPENCLAW_WORKSPACE_DIR=/data/workspace` (recommended)
 - `OPENCLAW_GATEWAY_TOKEN` (recommended; treat as an admin secret)

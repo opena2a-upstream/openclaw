@@ -1,4 +1,4 @@
-# swabble — macOS 26 speech hook daemon (Swift 6.2)
+# swabble: macOS 26 speech hook daemon (Swift 6.2)
 
 Goal: brabble-style always-on voice hook for macOS 26 using Apple Speech.framework (SpeechAnalyzer + SpeechTranscriber) instead of whisper.cpp. Local-only, wake word gated, dispatches a shell hook with the transcript. Shared wake-gate utilities live in `SwabbleKit` for reuse by other apps (iOS/macOS).
 
@@ -8,7 +8,7 @@ Goal: brabble-style always-on voice hook for macOS 26 using Apple Speech.framewo
 - Wake word gating (default "clawd" plus aliases) with bypass flag `--no-wake`.
 - `SwabbleKit` target (multi-platform) providing wake-word gating helpers that can use speech segment timing to require a post-trigger gap.
 - Hook execution with cooldown, min_chars, timeout, prefix, env vars.
-- Simple config at `~/.config/swabble/config.json` (JSON, Codable) — no TOML.
+- Simple config at `~/.config/swabble/config.json` (JSON, Codable), no TOML.
 - CLI implemented with Commander (SwiftPM package `steipete/Commander`); core types are available via the SwiftPM library product `Swabble` for embedding.
 - Foreground `serve`; later launchd helper for start/stop/restart.
 - File transcription command emitting txt or srt.
@@ -30,4 +30,4 @@ Goal: brabble-style always-on voice hook for macOS 26 using Apple Speech.framewo
 
 ## Open decisions
 - Whether to expose a UNIX control socket for `status`/`health` (currently planned as stdin/out direct calls).
-- Hook redaction (PII) parity with brabble — placeholder boolean, no implementation yet.
+- Hook redaction (PII) parity with brabble: placeholder boolean, no implementation yet.

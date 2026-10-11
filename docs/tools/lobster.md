@@ -40,7 +40,7 @@ If the pipeline pauses for approval, the tool returns a `resumeToken` so you can
 
 ## Pattern: small CLI + JSON pipes + approvals
 
-Build tiny commands that speak JSON, then chain them into a single Lobster call. (Example command names below — swap in your own.)
+Build tiny commands that speak JSON, then chain them into a single Lobster call. (Example command names below; swap in your own.)
 
 ```bash
 inbox list --json
@@ -317,10 +317,10 @@ OpenProse pairs well with Lobster: use `/prose` to orchestrate multi-agent prep,
 
 ## Safety
 
-- **Local subprocess only** — no network calls from the plugin itself.
-- **No secrets** — Lobster doesn't manage OAuth; it calls OpenClaw tools that do.
-- **Sandbox-aware** — disabled when the tool context is sandboxed.
-- **Hardened** — `lobsterPath` must be absolute if specified; timeouts and output caps enforced.
+- **Local subprocess only**: no network calls from the plugin itself.
+- **No secrets**: Lobster doesn't manage OAuth; it calls OpenClaw tools that do.
+- **Sandbox-aware**: disabled when the tool context is sandboxed.
+- **Hardened**: `lobsterPath` must be absolute if specified; timeouts and output caps enforced.
 
 ## Troubleshooting
 

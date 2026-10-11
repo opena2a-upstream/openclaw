@@ -33,7 +33,7 @@ Auth is supplied during the WebSocket handshake via:
 ## Device pairing (first connection)
 
 When you connect to the Control UI from a new browser or device, the Gateway
-requires a **one-time pairing approval** — even if you're on the same Tailnet
+requires a **one-time pairing approval**, even if you're on the same Tailnet
 with `gateway.auth.allowTailscale: true`. This is a security measure to prevent
 unauthorized access.
 

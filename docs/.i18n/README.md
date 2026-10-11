@@ -4,8 +4,8 @@ This folder stores **generated** and **config** files for documentation translat
 
 ## Files
 
-- `glossary.<lang>.json` — preferred term mappings (used in prompt guidance).
-- `<lang>.tm.jsonl` — translation memory (cache) keyed by workflow + model + text hash.
+- `glossary.<lang>.json`: preferred term mappings (used in prompt guidance).
+- `<lang>.tm.jsonl`: translation memory (cache) keyed by workflow + model + text hash.
 
 ## Glossary format
 

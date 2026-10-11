@@ -50,16 +50,16 @@ openclaw nodes rename --node <id|name|ip> --name "Living Room iPad"
 
 Events:
 
-- `node.pair.requested` — emitted when a new pending request is created.
-- `node.pair.resolved` — emitted when a request is approved/rejected/expired.
+- `node.pair.requested`: emitted when a new pending request is created.
+- `node.pair.resolved`: emitted when a request is approved/rejected/expired.
 
 Methods:
 
-- `node.pair.request` — create or reuse a pending request.
-- `node.pair.list` — list pending + paired nodes.
-- `node.pair.approve` — approve a pending request (issues token).
-- `node.pair.reject` — reject a pending request.
-- `node.pair.verify` — verify `{ nodeId, token }`.
+- `node.pair.request`: create or reuse a pending request.
+- `node.pair.list`: list pending + paired nodes.
+- `node.pair.approve`: approve a pending request (issues token).
+- `node.pair.reject`: reject a pending request.
+- `node.pair.verify`: verify `{ nodeId, token }`.
 
 Notes:
 

@@ -24,12 +24,12 @@ When `agents.defaults.typingMode` is **unset**, OpenClaw keeps the legacy behavi
 
 Set `agents.defaults.typingMode` to one of:
 
-- `never` — no typing indicator, ever.
-- `instant` — start typing **as soon as the model loop begins**, even if the run
+- `never`: no typing indicator, ever.
+- `instant`: start typing **as soon as the model loop begins**, even if the run
   later returns only the silent reply token.
-- `thinking` — start typing on the **first reasoning delta** (requires
+- `thinking`: start typing on the **first reasoning delta** (requires
   `reasoningLevel: "stream"` for the run).
-- `message` — start typing on the **first non-silent text delta** (ignores
+- `message`: start typing on the **first non-silent text delta** (ignores
   the `NO_REPLY` silent token).
 
 Order of “how early it fires”:

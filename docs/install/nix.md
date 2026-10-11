@@ -9,7 +9,7 @@ title: "Nix"
 
 # Nix Installation
 
-The recommended way to run OpenClaw with Nix is via **[nix-openclaw](https://github.com/openclaw/nix-openclaw)** — a batteries-included Home Manager module.
+The recommended way to run OpenClaw with Nix is via **[nix-openclaw](https://github.com/openclaw/nix-openclaw)**, a batteries-included Home Manager module.
 
 ## Quick Start
 
@@ -36,7 +36,7 @@ Reference the nix-openclaw README for module options.
 
 ## What you get
 
-- Gateway + macOS app + tools (whisper, spotify, cameras) — all pinned
+- Gateway + macOS app + tools (whisper, spotify, cameras), all pinned
 - Launchd service that survives reboots
 - Plugin system with declarative config
 - Instant rollback: `home-manager switch --rollback`
@@ -91,6 +91,6 @@ packaging and Nix builds (which do not rely on a full Xcode toolchain).
 
 ## Related
 
-- [nix-openclaw](https://github.com/openclaw/nix-openclaw) — full setup guide
-- [Wizard](/start/wizard) — non-Nix CLI setup
-- [Docker](/install/docker) — containerized setup
+- [nix-openclaw](https://github.com/openclaw/nix-openclaw): full setup guide
+- [Wizard](/start/wizard): non-Nix CLI setup
+- [Docker](/install/docker): containerized setup

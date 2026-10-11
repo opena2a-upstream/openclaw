@@ -11,8 +11,8 @@ title: "Web Tools"
 
 OpenClaw ships two lightweight web tools:
 
-- `web_search` — Search the web via Brave Search API (default) or Perplexity Sonar (direct or via OpenRouter).
-- `web_fetch` — HTTP fetch + readable extraction (HTML → markdown/text).
+- `web_search`: Search the web via Brave Search API (default) or Perplexity Sonar (direct or via OpenRouter).
+- `web_fetch`: HTTP fetch + readable extraction (HTML → markdown/text).
 
 These are **not** browser automation. For JS-heavy sites or logins, use the
 [Browser tool](/tools/browser).

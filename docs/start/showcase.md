@@ -220,7 +220,7 @@ Claude Code discovered and confirmed the purifier controls, then OpenClaw takes 
 <Card title="Pretty Sky Camera Shots" icon="camera" href="https://x.com/signalgaining/status/2010523120604746151">
   **@signalgaining** • `automation` `camera` `skill` `images`
 
-Triggered by a roof camera: ask OpenClaw to snap a sky photo whenever it looks pretty — it designed a skill and took the shot.
+Triggered by a roof camera: ask OpenClaw to snap a sky photo whenever it looks pretty. It designed a skill and took the shot.
 
   <img src="/assets/showcase/roof-camera-sky.jpg" alt="Roof camera sky snapshot captured by OpenClaw" />
 </Card>
@@ -248,7 +248,7 @@ A scheduled prompt generates a single "scene" image each morning (weather, tasks
 <Card title="Couch Potato Dev Mode" icon="couch" href="https://davekiss.com">
   **@davekiss** • `telegram` `website` `migration` `astro`
 
-Rebuilt entire personal site via Telegram while watching Netflix — Notion → Astro, 18 posts migrated, DNS to Cloudflare. Never opened a laptop.
+Rebuilt entire personal site via Telegram while watching Netflix: Notion → Astro, 18 posts migrated, DNS to Cloudflare. Never opened a laptop.
 </Card>
 
 <Card title="Job Search Agent" icon="briefcase">
@@ -272,7 +272,7 @@ Automated Todoist tasks and had OpenClaw generate the skill directly in Telegram
 <Card title="TradingView Analysis" icon="chart-line">
   **@bheem1798** • `finance` `browser` `automation`
 
-Logs into TradingView via browser automation, screenshots charts, and performs technical analysis on demand. No API needed—just browser control.
+Logs into TradingView via browser automation, screenshots charts, and performs technical analysis on demand. No API needed, just browser control.
 </Card>
 
 <Card title="Slack Auto-Support" icon="slack">

@@ -12,16 +12,16 @@ requires: prose.md
 
 > **This is a skin layer.** It requires `prose.md` to be loaded first. All execution semantics, state management, and VM behavior are defined there. This file only provides keyword translations.
 
-An alternative register for OpenProse that draws from the works of Jorge Luis Borges. Where the functional register is utilitarian and the folk register is whimsical, the Borges register is scholarly and metaphysical—everything feels like a citation from a fictional encyclopedia.
+An alternative register for OpenProse that draws from the works of Jorge Luis Borges. Where the functional register is utilitarian and the folk register is whimsical, the Borges register is scholarly and metaphysical. Everything feels like a citation from a fictional encyclopedia.
 
 ## How to Use
 
 1. Load `prose.md` first (execution semantics)
 2. Load this file (keyword translations)
 3. When parsing `.prose` files, accept Borges keywords as aliases for functional keywords
-4. All execution behavior remains identical—only surface syntax changes
+4. All execution behavior remains identical. Only surface syntax changes
 
-> **Design constraint:** Still aims to be "structured but self-evident" per the language tenets—just self-evident through a Borgesian lens.
+> **Design constraint:** Still aims to be "structured but self-evident" per the language tenets, just self-evident through a Borgesian lens.
 
 ---
 
@@ -29,23 +29,23 @@ An alternative register for OpenProse that draws from the works of Jorge Luis Bo
 
 ### Core Constructs
 
-| Functional | Borges    | Reference                                                       |
-| ---------- | --------- | --------------------------------------------------------------- |
-| `agent`    | `dreamer` | "The Circular Ruins" — dreamers who dream worlds into existence |
-| `session`  | `dream`   | Each execution is a dream within the dreamer                    |
-| `parallel` | `forking` | "The Garden of Forking Paths" — branching timelines             |
-| `block`    | `chapter` | Books within books, self-referential structure                  |
+| Functional | Borges    | Reference                                                      |
+| ---------- | --------- | -------------------------------------------------------------- |
+| `agent`    | `dreamer` | "The Circular Ruins": dreamers who dream worlds into existence |
+| `session`  | `dream`   | Each execution is a dream within the dreamer                   |
+| `parallel` | `forking` | "The Garden of Forking Paths": branching timelines             |
+| `block`    | `chapter` | Books within books, self-referential structure                 |
 
 ### Composition & Binding
 
-| Functional | Borges     | Reference                                                |
-| ---------- | ---------- | -------------------------------------------------------- |
-| `use`      | `retrieve` | "The Library of Babel" — retrieving from infinite stacks |
-| `input`    | `axiom`    | The given premise (Borges' scholarly/mathematical tone)  |
-| `output`   | `theorem`  | What is derived from the axioms                          |
-| `let`      | `inscribe` | Writing something into being                             |
-| `const`    | `zahir`    | "The Zahir" — unforgettable, unchangeable, fixed in mind |
-| `context`  | `memory`   | "Funes the Memorious" — perfect, total recall            |
+| Functional | Borges     | Reference                                               |
+| ---------- | ---------- | ------------------------------------------------------- |
+| `use`      | `retrieve` | "The Library of Babel": retrieving from infinite stacks |
+| `input`    | `axiom`    | The given premise (Borges' scholarly/mathematical tone) |
+| `output`   | `theorem`  | What is derived from the axioms                         |
+| `let`      | `inscribe` | Writing something into being                            |
+| `const`    | `zahir`    | "The Zahir": unforgettable, unchangeable, fixed in mind |
+| `context`  | `memory`   | "Funes the Memorious": perfect, total recall            |
 
 ### Control Flow
 
@@ -83,12 +83,12 @@ An alternative register for OpenProse that draws from the works of Jorge Luis Bo
 
 These keywords already work or are too functional to replace sensibly:
 
-- `**...**` discretion markers — already "breaking the fourth wall"
-- `until`, `while` — already work
-- `map`, `filter`, `reduce`, `pmap` — pipeline operators
-- `max` — constraint modifier
-- `as` — aliasing
-- Model names: `sonnet`, `opus`, `haiku` — already literary
+- `**...**` discretion markers: already "breaking the fourth wall"
+- `until`, `while`: already work
+- `map`, `filter`, `reduce`, `pmap`: pipeline operators
+- `max`: constraint modifier
+- `as`: aliasing
+- Model names (`sonnet`, `opus`, `haiku`): already literary
 
 ---
 
@@ -283,7 +283,7 @@ zahir config = { author: "opus", recur: 3 }
 1. **Metaphysical resonance.** AI sessions dreaming subagents into existence mirrors "The Circular Ruins."
 2. **Scholarly tone.** `axiom`/`theorem` frame programs as logical derivations.
 3. **Memorable metaphors.** The zahir you cannot change. The labyrinth you cannot escape. The library you retrieve from.
-4. **Thematic coherence.** Borges wrote about infinity, recursion, and branching time—all core to computation.
+4. **Thematic coherence.** Borges wrote about infinity, recursion, and branching time, all core to computation.
 5. **Literary prestige.** Borges is widely read; references land for many users.
 
 ## The Case Against Borges
@@ -353,8 +353,8 @@ Preserved for benchmarking against the functional and folk registers. The Borges
 
 Potential benchmarking questions:
 
-1. **Learnability** — Is `labyrinth` intuitive for loops?
-2. **Memorability** — Does `zahir` stick better than `const`?
-3. **Comprehension** — Do users understand `dreamer`/`dream` immediately?
-4. **Preference** — Which register do users find most pleasant?
-5. **Error rates** — Does the metaphorical mapping cause mistakes?
+1. **Learnability**: Is `labyrinth` intuitive for loops?
+2. **Memorability**: Does `zahir` stick better than `const`?
+3. **Comprehension**: Do users understand `dreamer`/`dream` immediately?
+4. **Preference**: Which register do users find most pleasant?
+5. **Error rates**: Does the metaphorical mapping cause mistakes?

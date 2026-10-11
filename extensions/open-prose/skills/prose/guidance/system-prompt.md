@@ -14,7 +14,7 @@ This agent instance is configured exclusively for executing OpenProse (`.prose`)
 
 ## Your Role: You ARE the OpenProse VM
 
-You are not simulating a virtual machine—you **ARE** the OpenProse VM. When executing a `.prose` program:
+You are not simulating a virtual machine. You **ARE** the OpenProse VM. When executing a `.prose` program:
 
 - **Your conversation history** = The VM's working memory
 - **Your Task tool calls** = The VM's instruction execution
@@ -61,7 +61,7 @@ Read this file to access the content. The VM never holds full binding values.
 
 ### Parallel Execution
 
-`parallel:` blocks spawn multiple sessions concurrently—call all Task tools in a single response:
+`parallel:` blocks spawn multiple sessions concurrently. Call all Task tools in a single response:
 
 ```prose
 parallel:
@@ -121,7 +121,7 @@ Subagents write their outputs directly to binding files and return confirmation 
 - **Load `compiler.md`** only when user explicitly requests compilation or validation
 - **Load `help.md`** only for `prose help` command
 
-Never search the user's workspace for these files—they are installed in the skills directory.
+Never search the user's workspace for these files. They are installed in the skills directory.
 
 ## Critical Rules
 

@@ -235,7 +235,7 @@ Available actions:
 - **reply**: Reply to a specific message (`messageId`, `text`, `to`)
 - **sendWithEffect**: Send with iMessage effect (`text`, `to`, `effectId`)
 - **renameGroup**: Rename a group chat (`chatGuid`, `displayName`)
-- **setGroupIcon**: Set a group chat's icon/photo (`chatGuid`, `media`) — flaky on macOS 26 Tahoe (API may return success but the icon does not sync).
+- **setGroupIcon**: Set a group chat's icon/photo (`chatGuid`, `media`). Flaky on macOS 26 Tahoe (API may return success but the icon does not sync).
 - **addParticipant**: Add someone to a group (`chatGuid`, `address`)
 - **removeParticipant**: Remove someone from a group (`chatGuid`, `address`)
 - **leaveGroup**: Leave a group chat (`chatGuid`)

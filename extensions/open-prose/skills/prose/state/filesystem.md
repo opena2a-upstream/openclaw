@@ -71,7 +71,7 @@ Format: `{YYYYMMDD}-{HHMMSS}-{random6}`
 
 Example: `20260115-143052-a7b3c9`
 
-No "run-" prefix needed—the directory name makes context obvious.
+No "run-" prefix needed. The directory name makes context obvious.
 
 ### Segment Numbering
 
@@ -264,8 +264,8 @@ When a binding is created inside a block invocation, it's scoped to that executi
 
 Examples:
 
-- `bindings/result__43.md` — binding `result` in execution_id 43
-- `bindings/parts__44.md` — binding `parts` in execution_id 44
+- `bindings/result__43.md`: binding `result` in execution_id 43
+- `bindings/parts__44.md`: binding `parts` in execution_id 44
 
 **File format with execution scope:**
 
@@ -367,7 +367,7 @@ prompt: "Review the research findings"
 | `agents/{name}/memory.md`     | Persistent agent |
 | `agents/{name}/{name}-NNN.md` | Persistent agent |
 
-The VM orchestrates; subagents write their own outputs directly to the filesystem. **The VM never holds full binding values—it tracks file paths.**
+The VM orchestrates; subagents write their own outputs directly to the filesystem. **The VM never holds full binding values. It tracks file paths.**
 
 ---
 

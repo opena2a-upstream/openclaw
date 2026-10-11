@@ -6,7 +6,7 @@ metadata: { "openclaw": { "emoji": "🪶", "homepage": "https://www.prose.md" } 
 
 # OpenProse Skill
 
-OpenProse is a programming language for AI sessions. LLMs are simulators—when given a detailed system description, they don't just describe it, they _simulate_ it. The `prose.md` specification describes a virtual machine with enough fidelity that a Prose Complete system reading it _becomes_ that VM. Simulation with sufficient fidelity is implementation. **You are the Prose Complete system.**
+OpenProse is a programming language for AI sessions. LLMs are simulators. When given a detailed system description, they don't just describe it, they _simulate_ it. The `prose.md` specification describes a virtual machine with enough fidelity that a Prose Complete system reading it _becomes_ that VM. Simulation with sufficient fidelity is implementation. **You are the Prose Complete system.**
 
 ## OpenClaw Runtime Mapping
 
@@ -151,10 +151,10 @@ When you need to read `prose.md` or `compiler.md`, read them from the same direc
 
 When the user asks you to **write or create** a new `.prose` file, load the guidance files:
 
-- `guidance/patterns.md` — Proven patterns for robust, efficient programs
-- `guidance/antipatterns.md` — Common mistakes to avoid
+- `guidance/patterns.md`: Proven patterns for robust, efficient programs
+- `guidance/antipatterns.md`: Common mistakes to avoid
 
-Do **not** load these when running or compiling—they're for authoring only.
+Do **not** load these when running or compiling. They're for authoring only.
 
 ### State Modes
 
@@ -214,7 +214,7 @@ OpenProse supports three state management approaches:
 
 This mode requires both `psql` CLI and a running PostgreSQL server. If either is unavailable, warn and offer fallback to filesystem state.
 
-**Context warning:** `compiler.md` is large. Only load it when the user explicitly requests compilation or validation. After compiling, recommend `/compact` or a new session before running—don't keep both docs in context.
+**Context warning:** `compiler.md` is large. Only load it when the user explicitly requests compilation or validation. After compiling, recommend `/compact` or a new session before running. Don't keep both docs in context.
 
 ## Examples
 
@@ -247,11 +247,11 @@ When first invoking the OpenProse VM in a session, display this banner:
 
 To execute a `.prose` file, you become the OpenProse VM:
 
-1. **Read `prose.md`** — this document defines how you embody the VM
-2. **You ARE the VM** — your conversation is its memory, your tools are its instructions
-3. **Spawn sessions** — each `session` statement triggers a Task tool call
-4. **Narrate state** — use the narration protocol to track execution ([Position], [Binding], [Success], etc.)
-5. **Evaluate intelligently** — `**...**` markers require your judgment
+1. **Read `prose.md`**: this document defines how you embody the VM
+2. **You ARE the VM**: your conversation is its memory, your tools are its instructions
+3. **Spawn sessions**: each `session` statement triggers a Task tool call
+4. **Narrate state**: use the narration protocol to track execution ([Position], [Binding], [Success], etc.)
+5. **Evaluate intelligently**: `**...**` markers require your judgment
 
 ## Help & FAQs
 

@@ -92,12 +92,12 @@ Notes:
 - `metadata` should be a **single-line JSON object**.
 - Use `{baseDir}` in instructions to reference the skill folder path.
 - Optional frontmatter keys:
-  - `homepage` — URL surfaced as “Website” in the macOS Skills UI (also supported via `metadata.openclaw.homepage`).
-  - `user-invocable` — `true|false` (default: `true`). When `true`, the skill is exposed as a user slash command.
-  - `disable-model-invocation` — `true|false` (default: `false`). When `true`, the skill is excluded from the model prompt (still available via user invocation).
-  - `command-dispatch` — `tool` (optional). When set to `tool`, the slash command bypasses the model and dispatches directly to a tool.
-  - `command-tool` — tool name to invoke when `command-dispatch: tool` is set.
-  - `command-arg-mode` — `raw` (default). For tool dispatch, forwards the raw args string to the tool (no core parsing).
+  - `homepage`: URL surfaced as “Website” in the macOS Skills UI (also supported via `metadata.openclaw.homepage`).
+  - `user-invocable`: `true|false` (default: `true`). When `true`, the skill is exposed as a user slash command.
+  - `disable-model-invocation`: `true|false` (default: `false`). When `true`, the skill is excluded from the model prompt (still available via user invocation).
+  - `command-dispatch`: `tool` (optional). When set to `tool`, the slash command bypasses the model and dispatches directly to a tool.
+  - `command-tool`: tool name to invoke when `command-dispatch: tool` is set.
+  - `command-arg-mode`: `raw` (default). For tool dispatch, forwards the raw args string to the tool (no core parsing).
 
     The tool is invoked with params:
     `{ command: "<raw args>", commandName: "<slash command>", skillName: "<skill name>" }`.
@@ -123,16 +123,16 @@ metadata:
 
 Fields under `metadata.openclaw`:
 
-- `always: true` — always include the skill (skip other gates).
-- `emoji` — optional emoji used by the macOS Skills UI.
-- `homepage` — optional URL shown as “Website” in the macOS Skills UI.
-- `os` — optional list of platforms (`darwin`, `linux`, `win32`). If set, the skill is only eligible on those OSes.
-- `requires.bins` — list; each must exist on `PATH`.
-- `requires.anyBins` — list; at least one must exist on `PATH`.
-- `requires.env` — list; env var must exist **or** be provided in config.
-- `requires.config` — list of `openclaw.json` paths that must be truthy.
-- `primaryEnv` — env var name associated with `skills.entries.<name>.apiKey`.
-- `install` — optional array of installer specs used by the macOS Skills UI (brew/node/go/uv/download).
+- `always: true`: always include the skill (skip other gates).
+- `emoji`: optional emoji used by the macOS Skills UI.
+- `homepage`: optional URL shown as “Website” in the macOS Skills UI.
+- `os`: optional list of platforms (`darwin`, `linux`, `win32`). If set, the skill is only eligible on those OSes.
+- `requires.bins`: list; each must exist on `PATH`.
+- `requires.anyBins`: list; at least one must exist on `PATH`.
+- `requires.env`: list; env var must exist **or** be provided in config.
+- `requires.config`: list of `openclaw.json` paths that must be truthy.
+- `primaryEnv`: env var name associated with `skills.entries.<name>.apiKey`.
+- `install`: optional array of installer specs used by the macOS Skills UI (brew/node/go/uv/download).
 
 Note on sandboxing:
 

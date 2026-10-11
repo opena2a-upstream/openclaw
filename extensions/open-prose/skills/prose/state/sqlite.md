@@ -121,9 +121,9 @@ Subagents (sessions spawned by the VM) are responsible for:
 
 **Critical:** Subagents write ONLY to `bindings`, `agents`, and `agent_segments` tables. The VM owns the `execution` table entirely. Completion signaling happens through the substrate (Task tool return), not database updates.
 
-**Critical:** Subagents must write their outputs directly to the database. The VM does not write subagent outputs—it only reads them after the subagent completes.
+**Critical:** Subagents must write their outputs directly to the database. The VM does not write subagent outputs. It only reads them after the subagent completes.
 
-**What subagents return to the VM:** A confirmation message with the binding location—not the full content:
+**What subagents return to the VM:** A confirmation message with the binding location, not the full content:
 
 **Root scope:**
 
@@ -157,7 +157,7 @@ The VM tracks locations, not values. This keeps the VM's context lean and enable
 
 ## Core Schema
 
-The VM initializes these tables. This is a **minimum viable schema**—extend freely.
+The VM initializes these tables. This is a **minimum viable schema**. Extend freely.
 
 ```sql
 -- Run metadata
@@ -235,7 +235,7 @@ CREATE TABLE IF NOT EXISTS imports (
 - **Extension tables**: Prefix with `x_` (e.g., `x_metrics`, `x_audit_log`)
 - **Anonymous bindings**: Sessions without explicit capture (`session "..."` without `let x =`) use auto-generated names: `anon_001`, `anon_002`, etc.
 - **Import bindings**: Prefix with import alias for scoping: `research.findings`, `research.sources`
-- **Scoped bindings**: Use `execution_id` column—NULL for root scope, non-null for block invocations
+- **Scoped bindings**: Use the `execution_id` column (NULL for root scope, non-null for block invocations)
 
 ### Scope Resolution Query
 
@@ -569,6 +569,6 @@ SQLite state management:
 4. Supports **atomic transactions** for reliable updates
 5. Allows **flexible schema evolution** as needed
 6. Requires the **sqlite3 CLI** tool
-7. Is **experimental**—expect changes
+7. Is **experimental**. Expect changes
 
 The core contract: the VM manages execution flow and spawns subagents; subagents write their own outputs directly to the database. Both maintain the principle that what happens is recorded, and what is recorded can be queried.

@@ -325,8 +325,8 @@ agents: {
 
 Tools:
 
-- `memory_search` — returns snippets with file + line ranges.
-- `memory_get` — read memory file content by path.
+- `memory_search`: returns snippets with file + line ranges.
+- `memory_get`: read memory file content by path.
 
 Local mode:
 

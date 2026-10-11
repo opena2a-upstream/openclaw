@@ -10,7 +10,7 @@ title: "Voice Wake"
 ## Modes
 
 - **Wake-word mode** (default): always-on Speech recognizer waits for trigger tokens (`swabbleTriggerWords`). On match it starts capture, shows the overlay with partial text, and auto-sends after silence.
-- **Push-to-talk (Right Option hold)**: hold the right Option key to capture immediately—no trigger needed. The overlay appears while held; releasing finalizes and forwards after a short delay so you can tweak text.
+- **Push-to-talk (Right Option hold)**: hold the right Option key to capture immediately, no trigger needed. The overlay appears while held; releasing finalizes and forwards after a short delay so you can tweak text.
 
 ## Runtime behavior (wake-word)
 
@@ -42,7 +42,7 @@ Hardening:
 - Capture pipeline lives in `VoicePushToTalk`: starts Speech immediately, streams partials to the overlay, and calls `VoiceWakeForwarder` on release.
 - When push-to-talk starts we pause the wake-word runtime to avoid dueling audio taps; it restarts automatically after release.
 - Permissions: requires Microphone + Speech; seeing events needs Accessibility/Input Monitoring approval.
-- External keyboards: some may not expose right Option as expected—offer a fallback shortcut if users report misses.
+- External keyboards: some may not expose right Option as expected. Offer a fallback shortcut if users report misses.
 
 ## User-facing settings
 

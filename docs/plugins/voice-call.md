@@ -153,7 +153,7 @@ Example with a stable public host:
 
 Voice Call uses the core `messages.tts` configuration (OpenAI or ElevenLabs) for
 streaming speech on calls. You can override it under the plugin config with the
-**same shape** — it deep‑merges with `messages.tts`.
+**same shape**. It deep‑merges with `messages.tts`.
 
 ```json5
 {

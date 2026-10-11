@@ -18,7 +18,7 @@ This document describes how the OpenProse VM tracks execution state using **stru
 
 ## Overview
 
-In-context state uses text-prefixed markers to persist state within the conversation. The VM "thinks aloud" about execution—what you say becomes what you remember.
+In-context state uses text-prefixed markers to persist state within the conversation. The VM "thinks aloud" about execution. What you say becomes what you remember.
 
 **Key principle:** Your conversation history IS the VM's working memory.
 
@@ -367,7 +367,7 @@ In-context state and file-based state (`filesystem.md`) are **independent approa
 - **In-context**: State lives in conversation history
 - **File-based**: State lives in `.prose/runs/{id}/`
 
-They are not designed to be complementary—pick the appropriate mode at program start.
+They are not designed to be complementary. Pick the appropriate mode at program start.
 
 ---
 

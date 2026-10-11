@@ -12,10 +12,10 @@ Most setups should use one Gateway because a single Gateway can handle multiple 
 
 ## Isolation checklist (required)
 
-- `OPENCLAW_CONFIG_PATH` — per-instance config file
-- `OPENCLAW_STATE_DIR` — per-instance sessions, creds, caches
-- `agents.defaults.workspace` — per-instance workspace root
-- `gateway.port` (or `--port`) — unique per instance
+- `OPENCLAW_CONFIG_PATH`: per-instance config file
+- `OPENCLAW_STATE_DIR`: per-instance sessions, creds, caches
+- `agents.defaults.workspace`: per-instance workspace root
+- `gateway.port` (or `--port`): unique per instance
 - Derived ports (browser/canvas) must not overlap
 
 If these are shared, you will hit config races and port conflicts.

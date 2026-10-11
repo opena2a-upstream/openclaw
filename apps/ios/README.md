@@ -15,7 +15,7 @@ open OpenClaw.xcodeproj
 ```
 
 ## Shared packages
-- `../shared/OpenClawKit` — shared types/constants used by iOS (and later macOS bridge + gateway routing).
+- `../shared/OpenClawKit`: shared types/constants used by iOS (and later macOS bridge + gateway routing).
 
 ## fastlane
 ```bash

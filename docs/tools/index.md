@@ -272,10 +272,10 @@ Core actions:
 
 Profile management:
 
-- `profiles` — list all browser profiles with status
-- `create-profile` — create new profile with auto-allocated port (or `cdpUrl`)
-- `delete-profile` — stop browser, delete user data, remove from config (local only)
-- `reset-profile` — kill orphan process on profile's port (local only)
+- `profiles`: list all browser profiles with status
+- `create-profile`: create new profile with auto-allocated port (or `cdpUrl`)
+- `delete-profile`: stop browser, delete user data, remove from config (local only)
+- `reset-profile`: kill orphan process on profile's port (local only)
 
 Common parameters:
 
